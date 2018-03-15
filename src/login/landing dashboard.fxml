@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="450.0" prefWidth="650.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="48.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuBar prefHeight="25.0" prefWidth="650.0" style="-fx-background-color: #004D40;" VBox.vgrow="ALWAYS">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="school">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="open" />
+                              <MenuItem mnemonicParsing="false" text="restore" />
+                              <MenuItem mnemonicParsing="false" text="utilities" />
+                              <MenuItem mnemonicParsing="false" text="restore" />
+                              <MenuItem mnemonicParsing="false" text="close" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="students">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                              <Menu mnemonicParsing="false" text="parents">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Delete" />
+                                 </items>
+                              </Menu>
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="parents">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="staff">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="fees">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="utilities">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                              <Menu mnemonicParsing="false" text="parents">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Delete" />
+                                 </items>
+                              </Menu>
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="help">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="student center" />
+                              <MenuItem mnemonicParsing="false" text="manage students" />
+                              <MenuItem mnemonicParsing="false" text="student exams" />
+                              <MenuItem mnemonicParsing="false" text="student reports" />
+                           </items>
+                        </Menu>
+                     </menus>
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" />
+                     </effect>
+                  </MenuBar>
+                  <ToolBar prefHeight="35.0" prefWidth="650.0" style="-fx-background-color: #2E7D32; -fx-background-radius: 0;" VBox.vgrow="ALWAYS">
+                     <items>
+                        <Region prefHeight="17.0" prefWidth="529.0" />
+                        <JFXButton prefHeight="25.0" prefWidth="96.0" text="Welcome,User" />
+                     </items>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToolBar>
+               </children>
+            </VBox>
+         </top>
+         <left>
+            <VBox prefHeight="383.0" prefWidth="91.0" style="-fx-background-color: #004D40; -fx-background-radius: 2;">
+               <effect>
+                  <Blend />
+               </effect>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </left>
+         <effect>
+            <DisplacementMap>
+               <mapData>
+                  <FloatMap />
+               </mapData>
+            </DisplacementMap>
+         </effect>
+      </BorderPane>
+   </children>
+</AnchorPane>

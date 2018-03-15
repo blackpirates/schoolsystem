@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-8.0" prefHeight="450.0" prefWidth="650.0" style="-fx-background-color: #004D40;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="schoolLogo" fitHeight="126.0" fitWidth="144.0" layoutX="275.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/education-512.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="usernameField" layoutX="256.0" layoutY="225.0" prefHeight="25.0" prefWidth="189.0" promptText="username" unFocusColor="#e91e63">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" layoutX="256.0" layoutY="273.0" prefHeight="25.0" prefWidth="189.0" promptText="password" unFocusColor="#e91e63">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="445.0" layoutY="337.0" ripplerFill="#b2ff59" style="-fx-background-color: #CDDC39;" text="Login" />
+            <Label layoutX="213.0" layoutY="148.0" prefHeight="34.0" prefWidth="295.0" text="MASENO SCHOOL" textFill="#84ffff">
+               <font>
+                  <Font name="Arial Unicode MS" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="252.0" layoutY="419.0" prefHeight="17.0" prefWidth="146.0" text="www.fineteklabs.com" textFill="#84ffff" />
+            <Hyperlink layoutX="275.0" layoutY="338.0" prefHeight="23.0" prefWidth="118.0" text="forgot password?">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
